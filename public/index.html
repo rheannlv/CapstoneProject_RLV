@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Gen Fitness</title>
+</head>
+<body style="background-color: #212529">
+<div class="container text-center">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand">G.F.</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="muscle_hx.html">Muscle History</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </nav>
+
+    <div class="row">
+        <div class="containerIMG">
+            <img src="female_barbell.jpg" class="img-fluid" alt="Squat" style="height: 400px; width: 2000px; filter: blur(3px);">
+            
+            <div class="centered" style=" position: absolute; top: 25%; left: 45%; transform: translate(-40%, -30%); border: 3px solid #f1f1f1; padding: 20px; width: 60%;">
+                <h1 class='display-1' style="margin-top: 50px; color: white; font-weight: 300;">Gen Fitness</h1>
+                <p class="lead" style="color: white;">Unlock Your Potential: Take your first step & Create a customized program.</p>
+            </div>
+          </div>
+       
+          
+</div>
+
+
+<form id = "containerU">    
+<div id="allButIMG" style="background-color:  #212529;">
+<div class="row">
+    <div id="chatBox" class="form-floating mb-4">
+        <div col-md-auto>
+        <div class="form-floating">
+            <select class="form-select" id="muscleType">
+                <!-- Add options for different cuisine types -->
+                <option selected>Select muscle group</option>
+                <option value="abdominals">Abs</option>
+                <option value="biceps">Biceps</option>
+                <option value="calves">Calves</option>
+                <option value="chest">Chest</option>
+                <option value="glutes">Glutes</option>
+                <option value="hamstrings">Hamstrings</option>
+                <option value="lats">Lats</option>
+                <option value="quadriceps">Quads</option>
+                <option value="Shoulders">Shoulders</option>
+                <option value="traps">Traps</option>
+                <option value="triceps">Triceps</option>
+            </select>
+            <label for="muscleType">Start your workout!</label>
+            </div>
+        </div>
+        <br>
+        <button id="targetMuscle" type="submit" class="btn btn-light">Enter</button>
+</form>
+
+<form id="container">
+    <br>
+        <p class="h2" style="color: whitesmoke;">Need a week's worth of workouts?</p>
+        <p class="h6" style="color: whitesmoke;">Click the button below for a seven-day program.</p><br><br>
+
+        <button id="chatGPT" type="submit" class="btn btn-light">Weekly Program</button><br><br>
+
+        
+
+        <div class="col-lg-auto">
+            <div class="form-floating">
+                <textarea id="responseT" class="form-control" style="height: 200px" readonly></textarea>
+                <label for="responseT">Your program here...</label>
+              </div>
+           <!---- <textarea id="responseT" rows="10" cols="120" style="text-align: start; padding-top: 20px;" readonly></textarea><br> -->
+        </div>
+</div>
+</form>
+</div>
+</div>
+<script src="function.js"></script>
+
+</body>
+</html>
